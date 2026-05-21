@@ -15,7 +15,7 @@ app = FastAPI(title="CI/CD Status Board", version="1.0.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://cicd-board.vercel.app",
+        "https://the-conveyor.vercel.app",
         *settings.ALLOWED_ORIGINS,
     ],
     allow_credentials=True,
