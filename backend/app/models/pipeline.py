@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Float
+from sqlalchemy import Column, Integer, BigInteger, String, DateTime, ForeignKey, Float
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from app.core.database import Base
@@ -10,7 +10,7 @@ class Pipeline(Base):
     repo_id = Column(Integer, ForeignKey("repos.id"), nullable=False)
 
     # GitHub Actions fields
-    github_run_id = Column(Integer, nullable=False, index=True)
+    github_run_id = Column(BigInteger, nullable=False, index=True)
     name = Column(String, nullable=False)           # workflow name
     head_branch = Column(String, nullable=False)    # branch
     head_sha = Column(String, nullable=False)       # commit SHA
