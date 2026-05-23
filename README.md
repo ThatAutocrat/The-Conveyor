@@ -2,6 +2,10 @@
 
 A real-time CI/CD status dashboard for GitHub Actions, built with FastAPI + React.
 
+
+<img width="1886" height="953" alt="image" src="https://github.com/user-attachments/assets/febeb405-71c2-46ad-8a9d-c525e7773aff" />
+
+
 ## Features
 
 - **Multi-repo tracking** — add any GitHub repo you have access to
