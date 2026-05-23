@@ -9,7 +9,7 @@ class Repo(Base):
     id = Column(Integer, primary_key=True, index=True)
     owner_id = Column(Integer, ForeignKey("users.id"), nullable=False)
     github_full_name = Column(String, nullable=False)  # e.g. "octocat/Hello-World"
-    github_repo_id = Column(Integer, nullable=False)
+    github_repo_id = Column(BigInteger, nullable=False)
     description = Column(String, nullable=True)
     default_branch = Column(String, default="main")
     is_active = Column(Boolean, default=True)
